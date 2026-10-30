@@ -100193,9 +100193,7 @@ case 4:p=3
 g=o.pop()
 h=A.a_(g)
 if(h instanceof A.i3){k=h
-if(k.a===B.lu)n.c=null
-else k.toString}else{j=h
-n.c=null
+if(k.a!==B.lu)k.toString}else{j=h
 A.k(j)}s=6
 break
 case 3:s=2
@@ -100235,11 +100233,11 @@ kl(){var s=0,r=A.p(t.N),q,p=this,o,n,m
 var $async$kl=A.q(function(a,b){if(a===1)return A.m(b,r)
 for(;;)switch(s){case 0:A.a7f()
 o=p.c
-if(o==null)throw A.f(A.ax("No has iniciado sesi\xf3n."))
 n=p.e
-if(n!=null){q=n
+if(n!=null&&n.length!==0){q=n
 s=1
-break}s=3
+break}if(o==null)throw A.f(A.ax("No has iniciado sesi\xf3n."))
+s=3
 return A.j(A.PP(o).D7(B.il),$async$kl)
 case 3:m=b
 s=m==null?4:6
